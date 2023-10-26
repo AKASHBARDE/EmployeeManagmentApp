@@ -14,7 +14,7 @@ import javax.persistence.*;
 @Table(name="Project_Managment")
 public class Project {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long projectId;
     private String projectName;
     private String projectDetails;

@@ -1,21 +1,20 @@
 package com.DepartmentManagment.DemartmentManagment.Entity;
-
-
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 @Entity
 @Table(name = "Departments")
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long DeptId;
-    private String DepartmentName;
-    private String DepartmentDetails;
+
+    private Long deptId;
+    private String departmentName;
+    private String departmentDetails;
 }
 

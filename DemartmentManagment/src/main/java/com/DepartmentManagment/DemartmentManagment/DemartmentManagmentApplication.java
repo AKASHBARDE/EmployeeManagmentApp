@@ -9,6 +9,4 @@ public class DemartmentManagmentApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemartmentManagmentApplication.class, args);
 	}
-	//gradle
-
 }

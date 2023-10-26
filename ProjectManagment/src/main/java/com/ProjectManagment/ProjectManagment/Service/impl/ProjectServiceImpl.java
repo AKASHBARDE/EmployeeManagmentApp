@@ -6,6 +6,8 @@ import com.ProjectManagment.ProjectManagment.Service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProjectServiceImpl implements ProjectService {
     @Autowired
@@ -20,4 +22,11 @@ public class ProjectServiceImpl implements ProjectService {
     public Project getProjectById(Long projectId) {
         return projectRepository.findById(projectId).orElse(null);
     }
+
+    @Override
+    public List<Project> getAll() {
+        return projectRepository.findAll();
+    }
+
+
 }

@@ -51,7 +51,7 @@ public class EmployeeServiceImpl implements EmployeeService {
             throw new EntityNotFoundException("Employee not found");
         }
 
-       // employee.setId(id);
+       employee.setId(id);
         return employeeRepository.save(employee);
     }
 
